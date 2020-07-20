@@ -1,0 +1,250 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>VSquare | Portfolio</title>
+		<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<img class="logo-header" href="#" src="images/logo.png">
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">HOME</a></li>
+								<li class="page-scroll"><a href="#work" class="scroll">WHO AM I?</a></li>
+								<li class="page-scroll"><a href="#team" class="scroll">WHERE'S MY PROJECTS?</a></li>
+								<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">CONTACTS</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----banner---->
+			<div class="banner text-center">
+				<div class="container ipad" style="display: flex;">
+					<div class="preview">
+						<img class="logo-v" src="images/logo-v.png">
+						<span class="name">
+							<p style="margin-right: 35px;"><a>V</a>italiy</p>
+							<p><a>V</a>ashchuk</p>
+						</span>
+						<span class="zag">
+							<span class="poloska"></span>
+							<span class="main-text">
+								<p>Product designer, prototype, logo maker, web-design</p>
+								<p>What do I make?</p>
+								<p class="make">Hottest templates for Adobe XD, redesigning, prototype, logo, web-sites.</p>
+							</span>
+						</span>
+						<span class="buttons">
+							<a href="#team" class="scroll btn-portf"><img src="images/portfolio.png">Portfolio</a>
+							<a href="#work1" class="scroll btn-more"><p>...</p>More</a>
+						</span>
+					</div>
+				</div>
+				<label class="page-scroll" style="margin-top: -2px; position: relative;"><a class="big-btn scroll" href="#work1"><span> </span></a><img class="scroll-down" src="images/back-arrow.png"></label>
+			</div>
+			<!--//banner---->
+			<!---work--->
+			<div id="work" class="work">
+				<div id="work1" class="container zai">
+					<div class="pick-me">
+						<p class="pm-header">why you should<a>pick me?</a></p>
+						<span>
+							<img src="images/pi.png">
+							<p>I have some knowledge about web-design. I create platform <a>«Creatly»</a> that can help many people make some simple designs.</p>
+						</span>
+						<span>
+							<img src="images/pi.png">
+							<p>I Know 4 programing languages:</p>
+						</span>
+						<div class="lang">
+							<p>html</p>
+							<p>css</p>
+							<p>js</p>
+							<p>python</p>
+						</div>
+						<div class="lang-proc">
+							<p style="margin-right: 43px;">84%</p>
+							<p style="margin-right: 32px;">92%</p>
+							<p style="margin-right: 43px;">20%</p>
+							<p>34%</p>
+						</div>
+						<span>
+							<img src="images/pi.png">
+							<p>Create some special prototypes in Adobe XD and some logos with uncial design.</p>
+						</span>
+						<span>
+							<img src="images/pi.png">
+							<p>I`m very creative, hard-work and thinking positive. I want have a job that will give me money and make me happy.</p>
+						</span>
+					</div>
+					<div class="pick-me right">
+						<p class="pm-header" style="margin-left: 30px;">how can i<a>help</a>you?</p>
+						<span>
+							<img src="images/pi.png">
+							<p>Create concept of your web-site and if you agree with this concept I will realize it.</p>
+						</span>
+						<span>
+							<img src="images/pi.png">
+							<p>Create special logos for your brand, site or just for fun.</p>
+						</span>
+						<span>
+							<img src="images/pi.png">
+							<p>Create platforms such as <a>creatly.art</a> with so hard system of canvases.</p>
+						</span>
+						<img src="images/logo-vw.png" class="logo-main">
+					</div>
+				</div>
+					<!---//works--->
+					<!---team--->
+					<div id="team" class="team">
+						<div class="container pad">
+							<span class="project-header"><p>Hmmm... Where's my<a>projects?</a></p></span>
+							<div class="projects-1">
+								<a class="project" style="background-image: url(images/project1.png);" href="https://www.behance.net/gallery/91420069/JBL-site-redesign"></a>
+								<a class="project" style="background-image: url(images/project2.png);" href="https://www.behance.net/gallery/91420915/INMOTION-site-redesign"></a>
+							</div>
+							<div class="projects-2">
+								<a class="project" style="background-image: url(images/project3.png);" href="https://dribbble.com/shots/10362370-WM-Logo"></a>
+								<a class="project" style="background-image: url(images/project4.png);" href="https://www.behance.net/gallery/91421199/HP-site-redesign"></a>
+							</div>
+							<a href="https://www.creatly.art/" class="creatly">
+								<img src="images/creatly.png">
+								<p>Platform</p>
+							</a>
+						</div>
+					</div>
+					<!---//team--->
+					<!---Contact--->
+					<div id="contact" class="contact">
+						<div class="container">
+							<div class="footer-contact">
+								<p class="use">concept?</p>
+								<p>web-site?</p>
+								<p class="use">logo?</p>
+							</div>
+							<div class="zao">
+								<div class="message">
+									<input type="text" id="fname" name="firstname" placeholder="Name">
+									<input type="text" id="email" name="email" placeholder="E-mail">
+									<textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+									<input type="submit" id="submit" value="Submit">
+								</div>
+								<div class="right-conner">
+									<div class="contacts">
+										<img src="images/profile.png">
+										<span class="profile">
+											<p class="name-footer">Vitaliy Vashchuk</p>
+											<p>Product designer, prototype, logo maker, web-design, freelancer</p>
+										</span>
+									</div>
+									<img class="arrow-footer" src="images/arrow.png">
+									<img class="reverse-arrow-footer" src="images/arrow-reverse.png">
+									<div class="social-media">
+										<span>
+											<img class="i-contact" src="images/contact.png">
+											<p>Contacts:</p>
+										</span>
+										<span>
+											<a href="https://www.facebook.com/vitalik.vashuk/"><img src="images/face.png"></a>
+											<a href="https://www.instagram.com/vashchuk17/"><img src="images/intsa.png"></a>
+											<a href="https://dribbble.com/vvashchuk"><img src="images/dribbble.png"></a>
+											<a href="mailto:bionicle2706@gmail.com"><img src="images/mail.png"></a>
+										</span>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="reserve">
+						<p>&copy; Copyright 2020 VSquare Portfolio - All Rights Reserved</p>
+					</div>
+					<!---//Contact--->
+					<!---footer--->
+					<div class="footer">
+						<div class="container">
+							<div class="footer-right">
+								<script type="text/javascript">
+									$(document).ready(function() {
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<!---//footer--->
+				</div>
+			</div>
+			
+	</body>
+</html>
+
